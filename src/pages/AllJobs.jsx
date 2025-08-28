@@ -12,7 +12,6 @@ const AllJobs = () => {
     const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/jobs`);
     setJobs(data);
   };
-  console.log(jobs);
   return (
     <div className="container px-6 py-10 mx-auto min-h-[calc(100vh-306px)] flex flex-col justify-between">
       <div>

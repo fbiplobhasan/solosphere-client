@@ -39,7 +39,7 @@ const AddJob = () => {
       // 1. make a post req with axios
       await axios.post(`${import.meta.env.VITE_API_URL}/add-job`, job_describe);
       // 2. Reset form
-      form.reset();
+      e.target.reset();
       // 3. show toast modal
       toast.success("Job Data Added Successfully.");
       // 4. navigate to my posted page.
